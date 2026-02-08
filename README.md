@@ -25,14 +25,14 @@ In our experiments, **XGBoost** achieved the best overall tradeoff, with strong 
 | SVM | 0.8620 | 0.7372 | 0.7190 |
 | MLP | 0.8670 | 0.6610 | 0.6842 |
 
-![Results table](assets/results_table.png)
+<img src="assets/results_table.png" width="700" alt="Results table">
 
 ---
 
 ## Data preparation (example)
 We applied common steps for medical / tabular ML: outlier handling, scaling, encoding, and feature engineering (e.g., lymph node ratio).
 
-![Before vs after preprocessing](assets/before_after_preprocessing.png)
+<img src="assets/before_after_preprocessing.png" width="700" alt="Before vs after preprocessing">
 
 ---
 
