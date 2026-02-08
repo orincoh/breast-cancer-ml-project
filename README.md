@@ -25,14 +25,14 @@ In our experiments, **XGBoost** achieved the best overall tradeoff, with strong 
 | SVM | 0.8620 | 0.7372 | 0.7190 |
 | MLP | 0.8670 | 0.6610 | 0.6842 |
 
-<img src="assets/results_table.png" width="700" alt="Results table">
 
 ---
 
-## Data preparation (example)
-We applied common steps for medical / tabular ML: outlier handling, scaling, encoding, and feature engineering (e.g., lymph node ratio).
-
-<img src="assets/before_after_preprocessing.png" width="700" alt="Before vs after preprocessing">
+## Data preparation
+The pipeline includes standard preprocessing steps for tabular medical data:
+outlier handling (3×IQR), downsampling the majority class to a 2:1 ratio, Min–Max scaling for numeric features,
+age discretization into bins, and categorical encoding (one-hot for non-ordinal features and ordinal mapping where appropriate).
+We also engineered additional features such as the ratio of positive to examined lymph nodes.
 
 ---
 
